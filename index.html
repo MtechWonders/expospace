@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="./Assets/css/login.css">
 </head>
+<body style="background-color: yellow;">
+  <div class="container">
+    <h2>Login</h2>
+    <form action="home.html" method="POST" id="loginForm">
+      <input type="text" name="candidate_id" placeholder="Candidate ID" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Login">
+    </form>
+  </div>
+  <script>
+  	document.addEventListener("DOMContentLoaded", function() {
+  const loginForm = document.getElementById("loginForm");
+  loginForm.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+    const candidateId = loginForm.elements["candidate_id"].value;
+    const password = loginForm.elements["password"].value;
+    // Check if credentials are correct
+    if (candidateId === "33" && password === "s") {
+      window.location.href = "home.html"; // Redirect to home page
+    } else {
+      alert("Invalid credentials. Please try again.");
+    }
+  });
+});
 
-<body>
-
+  </script>
 </body>
-
 </html>
