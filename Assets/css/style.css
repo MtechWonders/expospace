@@ -5,6 +5,7 @@
   user-zoom: none;
   user-select: none;
   font-family: sans-serif;
+  outline: none;
 }
 
 /* Navigation */
@@ -78,13 +79,29 @@ nav {
 	height: 700px;
 	
 }
-.link{
+#link{
 	color: yellow;
 	text-decoration: none;
-	margin-left: 20px;
+	margin-left: 15px;
+	border: 2px solid yellow;
+	padding: 5px;
+outline: none;
+width: 100px;
+gap: 20px;
+position: sticky;
+border-radius: 6px 0 6px 0;
+top: 0;
+z-index: 1000; 
 }
-.catlist{
+.up{
+background-image: linear-gradient(yellow,black);
+	padding-right: 355px;
+	color: yellow;
+	line-height: 6px;
 	
+	font-size: 1px;
 	
-	border: 2px solid ;
+	margin-top: 8
+	14px;
+	border-radius: 0 0 6px 6px;
 }
